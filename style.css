@@ -230,7 +230,7 @@ footer {
 }
 
 .wybormiast {
-    position: relative;
+    position: static;
     float: left;
     margin-top: 1vh;
     padding-left: 200px;
@@ -239,7 +239,7 @@ footer {
     border-top-right-radius: 15px;
     background-color: rgb(226, 226, 226);
     width: 100%;
-    height: 150vh;
+    height: 100vh;
 }
 
 #textstopka {
