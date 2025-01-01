@@ -1,0 +1,515 @@
+* {
+    font-family: "Roboto", "Arial", sans-serif;
+    animation-name: fadein;
+    animation-duration: .5s;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #menufixed {
+        position: static;
+    }
+
+    #logo {
+        min-width: 10%;
+        min-height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #logotext {
+        font-size: 24px;
+        text-align: left;
+        padding-top: -100px;
+    }
+    #nav {
+        left: -88px;
+        min-width: 87%;
+        background-color: transparent;
+    }
+
+    .napisnav {
+        min-width: 120%;
+        top: 50px;
+        margin: 5px;
+        background-color: white;
+    }
+    .optnav{
+        min-width: 116%;
+        margin: 5px;
+    }
+    #optionsnav {
+        min-width: 120%;
+        min-width: 90%;
+        top: 50px;
+        font-size: 200%;
+    }
+    #menulogo {
+        display: none;
+    }
+    #dhaka {
+        margin-top: 320px;
+    }
+
+    #form {
+        margin-top: 20px;
+    }
+
+    #wybormiast {
+        padding-left: 5px;
+        padding-right: 5px;
+        float: none;
+    }
+}
+
+/* wiem, że w poleceniu było tylko dla 1200px i 600px, ale galeria zdjęć akurat taki rozmiar i musiałem wstawić jeszcze jeden @media screen*/
+
+@media screen and (max-width: 800px) {
+    #galeriazdjec {
+        width: 400px;
+        height: 290px;
+    }
+    #glownezdjecie {
+        width: 391px;
+        height: 225px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .nav {
+        max-width: 350px;
+        position: absolute;
+        background-color: transparent;
+        top: 110px;
+        left: -70px
+    }
+    #menulogo {
+        max-width: 240px;
+        min-height: 200px;
+        border-bottom-left-radius: 50px;
+    }
+    #fullmenu {
+        min-height: 250px;
+        background-color: rgb(255, 245, 245);
+    }
+    .main {
+        margin-top: 270px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #zdjecie1, #zdjecie2, #zdjecie3,#zdjecie4, #zdjecie5, #zdjecie6,#zdjecie7, #zdjecie8, #zdjecie9 {
+        width: 100%;
+        padding-bottom: 10px;
+        float: left;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #video {
+        width: 90vw;
+    }
+
+    #mapa {
+        width: 80vw;
+    }
+
+    #tytulpodstr {
+        margin-left: 10%;
+    }
+}
+
+
+body {
+    background-color: rgb(235, 235, 235);
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.menufixed {
+    position: fixed;
+    z-index: 1;
+    float: left;
+    display: block;
+    top: 0;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+.zdjecie:hover {
+    transform: scale(1.05);
+}
+
+#fullmenu {
+    position: relative;
+    background-color: rgb(255, 245, 245);
+    height: 135px;
+    width: 100%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#menulogo {
+    position: absolute;
+    top: 5px;
+    left: 370px;
+    background-color: rgb(207, 211, 214);
+    width: 800px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 70px;
+    box-shadow: 2px 2px 10px black;
+    margin-top: 20px;
+
+}
+
+.logo {
+    background-image: linear-gradient(to right, rgb(113, 21, 136), red);
+    width: 370px;
+    height: 80px;
+    padding: 20px;
+    top: 20px;
+    margin-left: 20px;
+    border-radius: 150px;
+    box-shadow: 2px 2px 10px black;
+    position: relative;
+    transition: .7s;
+}
+
+#linklogo {
+    text-decoration: none;
+}
+
+.logotext {
+    color: whitesmoke;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 3px;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 10px black;
+}
+
+#powitanie {
+    float: left;
+    margin-top: auto;
+    font-size: 30px;
+}
+
+#tytul {
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+footer {
+    float: left;
+    width: 100vw;
+    height: 100px;
+    background-color: lightgray;
+    clear: both;
+}
+
+.wybormiast {
+    position: relative;
+    float: left;
+    margin-top: 1vh;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    min-height: 100vh;
+}
+
+#textstopka {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 30px;
+}
+
+.linkdiv:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.linkdiv {
+    float: left;
+    margin: 25px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    background-image: none;
+    box-shadow: 1px 2px 10px black;
+    opacity: 0.8;
+    transition: .7s;
+    background-size: 200px;
+}
+
+.linkdiv2 {
+    width: 200px;
+    height: 20px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    position: absolute;
+    bottom: 0;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.options:hover {
+    transform: scale(1.2);
+}
+
+.options {
+    margin-top: 20px;
+    padding-left: 35px;
+    padding-top: 5px;
+    float:left;
+    transition: .7s;
+}
+
+#tlodiv1 {
+    background-image: url(pic/1.jpg);
+}
+
+#tlodiv2 {
+    background-image: url(pic/2.jpg);
+}
+
+#tlodiv3 {
+    background-image: url(pic/3.jpg);
+}
+
+#tlodiv4 {
+    background-image: url(pic/4.jpg);
+}
+
+#tlodiv5 {
+    background-image: url(pic/5.jpg);
+}
+
+#tlodiv6 {
+    background-image: url(pic/6.jpg);
+}
+
+#tlodiv7 {
+    background-image: url(pic/7.jpg);
+}
+
+#tlodiv8 {
+    background-image: url(pic/17.jpg);
+}
+
+#tlodiv9 {
+    background-image: url(pic/55.jpg);
+}
+
+nav {
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(248, 241, 241);
+    min-height: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.optionsnav {
+    position: absolute;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.napisnav {
+    float: left;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 5px;
+    box-shadow: 1px 0.5px 10px black;
+}
+
+.optnav:hover {
+    transform: scale(1.1);
+}
+
+.optnav {
+    background-color: rgb(221, 221, 221);
+    border-radius: 20px;
+    padding: 10px;
+    float: left;
+    margin-left: 10px;
+    transition: .7s;
+    box-shadow: 1px 0.5px 10px black;
+}
+
+main {
+    float: left;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    background-color: rgb(221, 221, 221);
+    margin-top: 200px;
+    width: 100vw;
+    height: auto;
+    border-radius: 10px;
+    padding-bottom: 10vw;
+}
+
+#tytulpodstr {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.tekst {
+    font-size: 20px;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding: 10px;
+    float: left;
+}
+
+.zdjecie {
+    float: left;
+    width: 50vw;
+    margin-top: -6px;
+    padding-bottom: 10px;
+    transition: .7s;
+    border-radius: 5px;
+}
+
+.tytuldzial {
+    font-size: 30px;
+    padding: 10px;
+}
+
+table, th, td {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+}
+
+th {
+    background-color: aliceblue;
+}
+
+td {
+    background-color: rgb(234, 239, 243);
+}
+
+table {
+    width: 50vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    background-color: gray;
+}
+
+#demografia {
+    text-align: center;
+}
+
+#lista {
+    margin-left: 5vw;
+    height: auto;
+}
+
+video:hover {
+    transform: scale(1.05);
+}
+
+video {
+    width: 50vw;
+    float: left;
+    transition: .7s;
+}
+
+iframe:hover {
+    transform: scale(1.05);
+}
+
+iframe {
+    width: 70vw;
+    height: 50vh;
+    float: left;
+    transition: .7s;
+}
+
+#uwagi {
+    width: 100%;
+}
+
+#tlogalerii {
+    margin-top: 20px;
+    background-color: rgb(198, 203, 204);
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    float: left;
+}
+
+.galeriazdjec{
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 760px;
+    height: 535px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    margin-bottom: 100vh;
+    border-color: rgba(245, 245, 245, 0.37);
+    box-shadow: 5px 5px 10px;
+}
+
+.glownezdjecie {
+    border-style: solid;
+    width: 751px;
+    height: 422px;
+    border-width: 5px;
+    float: left;
+    border-color: rgba(245, 245, 245, 0.37);
+}
+
+.glownezdj {
+    width: 100%;
+    height: 100%;   
+}
+
+
+.malezdjecia {
+    float: left;
+    width: 25%;
+    top: 80%;
+    height: 20.5%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(245, 245, 245, 0.37);
+}
