@@ -467,7 +467,7 @@ iframe {
 #tlogalerii {
     margin-top: 20px;
     background-color: rgb(198, 203, 204);
-    width: 100%;
+    width: 100vw;
     float: left;
 }
 
