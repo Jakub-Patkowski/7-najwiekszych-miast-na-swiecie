@@ -41,7 +41,7 @@ a {
         min-width: 87%;
         background-color: transparent;
     }
-    .container {
+    #container {
         width: 90vw;
     }
 
