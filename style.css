@@ -41,6 +41,9 @@ a {
         min-width: 87%;
         background-color: transparent;
     }
+    .container {
+        width: 90vw;
+    }
 
     .napisnav {
         min-width: 120%;
@@ -463,7 +466,7 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: 70vw;
+    width: 50vw;
 }
 
 .mySlides {
