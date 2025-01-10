@@ -76,20 +76,6 @@ a {
     }
 }
 
-/* wiem, że w poleceniu było tylko dla 1200px i 600px, ale galeria zdjęć akurat taki rozmiar i musiałem wstawić jeszcze jeden @media screen*/
-
-@media screen and (max-width: 800px) {
-    #galeriazdjec {
-        width: 310px;
-        height: 220px;
-    }
-    #glownezdjecie {
-        width: 300px;
-        height: 168.75px;
-    }
-
-}
-
 @media screen and (max-width: 1200px) {
     .nav {
         max-width: 350px;
@@ -244,6 +230,7 @@ footer {
     text-align: center;
     margin-top: 35px;
     font-size: 30px;
+    clear: both;
 }
 
 .linkdiv:hover{
@@ -464,51 +451,83 @@ iframe {
     width: 100%;
 }
 
-#tlogalerii {
-    margin-top: 20px;
-    background-color: rgb(198, 203, 204);
-    width: 100vw;
-    float: left;
-}
-
-.galeriazdjec{
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 760px;
-    height: 535px;
-    border-style: solid;
-    border-width: 5px;
-    margin-bottom: 100vh;
-    border-color: rgba(245, 245, 245);
-    box-shadow: 5px 5px 10px;
-}
-
-.glownezdjecie {
-    border-style: solid;
-    width: 750px;
-    height: 420px;
-    border-width: 5px;
-    float: left;
-    border-color: rgba(245, 245, 245);
-}
-
-.glownezdj {
-    width: 100%;
-    height: 100%;   
-}
-
-
-.malezdjecia {
-    float: left;
-    width: 25%;
-    top: 80%;
-    height: 21%;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(245, 245, 245);
-}
-
 #odnosnik {
     float: left;
+}
+
+#tlogaleria {
+    height: 100vh;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 50vw;
+}
+
+.mySlides {
+    display: none;
+}
+  
+.cursor {
+    cursor: pointer;
+}
+  
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover,.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.column {
+    float: left;
+    width: 25%;
+}
+  
+.demo {
+    opacity: 0.6;
+}
+  
+.active,.demo:hover {
+    opacity: 1;
 }
