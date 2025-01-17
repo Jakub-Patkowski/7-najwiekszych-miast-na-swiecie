@@ -25,11 +25,11 @@ a {
         position: static;
     }
 
-    #logo {
+    .logo {
         min-width: 10%;
         min-height: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     #logotext {
         font-size: 24px;
@@ -44,7 +44,10 @@ a {
     #container {
         width: 90vw;
     }
-
+    .main {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
     .napisnav {
         min-width: 120%;
         top: 50px;
@@ -58,14 +61,21 @@ a {
     #optionsnav {
         min-width: 120%;
         min-width: 90%;
-        top: 50px;
+        top: 200px;
         font-size: 200%;
     }
     #menulogo {
-        display: none;
+        top: 120px !important;
+        left: auto !important;
+        min-width: 100vw !important; 
+        min-height: 180px !important;
+        border-top-left-radius: 50px !important;
     }
-    #dhaka {
-        margin-top: 320px;
+    #powitanie {
+        padding: 5px !important;
+    }
+    #fullmenu {
+        margin-bottom: 50px !important;
     }
 
     #form {
@@ -75,7 +85,19 @@ a {
     #wybormiast {
         padding-left: 5px;
         padding-right: 5px;
-        float: none;
+    }
+
+    #zdjecie1, #zdjecie2, #zdjecie3,#zdjecie4, #zdjecie5, #zdjecie6,#zdjecie7, #zdjecie8, #zdjecie9 {
+        width: 65% !important;
+        padding-right: 10px !important;
+    }
+
+    #demografia {
+        width: 90vw;
+    }
+
+    #mapa {
+        width: 90vw !important;
     }
 }
 
