@@ -102,9 +102,6 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
-    #menufixed {
-        position: static;
-    }
     .nav {
         max-width: 350px;
         position: absolute;
